@@ -18,20 +18,21 @@ import lombok.NoArgsConstructor;
 public class Member {
 	
 	public Member(String userid, String pw, String role, PasswordEncoder encoder) {
-		
-		this.userid =userid;
-		this.pw =encoder.encode(pw);
-		this.role=role;
+		this.userid = userid;
+		this.pw = encoder.encode(pw);
+		this.role = role;
 	}
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long id; //pk
+	
 	@Column(nullable = false)
-	private String userid;
+	private String userid; // not null
 	@Column(nullable = false)
-	private String pw;
-	@Column(updatable = false, nullable = false)
-	private String role; // 역할 권한 설정 때 사용 예정
-						 // default값 'user'
-
+	private String pw; // not null
+	@Column(updatable = false)
+	private String role; // 역할, 권한, 설정 때 사용 예정
+						 // default 값 admin
+	
 }

@@ -109,7 +109,6 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -124,52 +123,52 @@
 			<version>1.18.24</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- Spirng에서 DB  연결을 하기 위해 필요한 라이브러리들 -->
-
-		<!-- 1.mybatis 라이브러리 -->
+		<!-- Spring에서 DB 연결을 하기 위해 필요한 라이브러리들-->
+		<!-- 1. mybatis 라이브러리 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
 			<version>3.5.6</version>
 		</dependency>
-		<!-- 2. mybatis-spring라이브러리
-			: mybaties F/W spring F/W 연결해주는 역할을 하는 라이브러리
-		 -->
+		<!-- 2. mybatis-spring 라이브러리
+				: mybatis f/w sring f/w 연결해주는 역할을 하는 라이브러리	
+		-->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 			<version>3.0.1</version>
 		</dependency>
-		<!-- 3.mysql driver를 가져오는 라이브러리 -->
+		<!-- 3. mysql dirver를 가져오는 라이브러리 -->
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 			<version>8.0.33</version>
 		</dependency>
-		<!-- 4. spring-jdbc
-			: Spring F/W에서 jdbc 코드를 사용할수 있게 도와주는 라이브러리
-		 -->
+		<!-- 4. spring-jdbc 라이브러리
+				: Spring f/w에서 jdbc 코드르 사용할 수 있게 도와주는 라이브러리	
+		-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>5.0.20.RELEASE</version>
+			<version>5.0.2.RELEASE</version>
 		</dependency>
-		<!-- 5.HikariCP
-			: Connection pool을 효과적으로 관리해주는 라이브러리
-		-->
+		<!-- 5. HikariCP
+				: Connetion pool을 효과적으로 관리해주는 라이브러리
+		 -->
 		<dependency>
 			<groupId>com.zaxxer</groupId>
 			<artifactId>HikariCP</artifactId>
 			<version>4.0.3</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>5.3.8</version>
 		</dependency>
-		
-		<!-- java의 객체를 json구조로 자동으로 변환해주는 라이브러리-->
+
+		<!-- java 객체를 json 구조로 자도으올 변환해주는 라이브러리 (ajax용) -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>

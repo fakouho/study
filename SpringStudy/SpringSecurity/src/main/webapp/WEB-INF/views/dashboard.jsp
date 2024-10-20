@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<c:set var="cpath" value="${pageContext.request.contextPath}" />
+<c:set var="cpath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -22,11 +22,11 @@
 <div class="container" align="center">
     <h3 class="form-signin-heading text-center mb-5">💚빅데이터반 대시보드💚</h3>
 
-	<h4 class="overview-normalize">접속 아이디</h4>
+	<h4 class="overview-normalize">${mydata.userid}</h4>
 	<p id='loginid'>
 	</p>
 	<hr/>
-    <h4 class="overview-normalize">역할</h4>
+    <h4 class="overview-normalize">${mydata.role}</h4>
 	<p id='pw'>
 	</p>
     <hr/>
@@ -36,7 +36,7 @@
         <button onclick="location.href='${cpath}/user'" class="btn btn-sm btn-info">유저페이지(유저만)</button>
     </p>
     <hr/>
-    <form method="post" action="/logout">
+    <form action="${cpath}/logout">
         <button class="btn btn-sm btn-danger btn-block" type="submit" id="logoutbtn">로그아웃</button>
     </form>
 

@@ -3,7 +3,7 @@ package com.smhrd.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.smhrd.db.ArtistMapper;
@@ -12,15 +12,13 @@ import com.smhrd.model.ArtistVO;
 @RestController
 public class ArtistRestController {
 	
-	// table 단위로 컨트롤러,vo,mapper,mapper.xml 다 새롭게 생성
-	
 	@Autowired
 	private ArtistMapper mapper;
 	
-	@RequestMapping("/artist")
-	public List<ArtistVO> artist(){
-		List<ArtistVO> list = mapper.artist();
-		return list;
+	// 아티스트 정보 가져오기
+	@GetMapping("/getdata")
+	public List<ArtistVO> getdata() {
+		List<ArtistVO> result = mapper.getdata();
+		return result;
 	}
-	
 }

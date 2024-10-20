@@ -6,12 +6,9 @@ import org.springframework.stereotype.Repository;
 import com.smhrd.myapp.entity.Member;
 
 @Repository
-public interface MemberRepository extends JpaRepository<Member,Long> {
-
-	Member findByUseridAndPw(String userid, String pw);
-
-	Member findByUserid(String username);
-
-	//기본 CRUD 세팅 끝남
+public interface MemberRepository extends JpaRepository<Member, Long> {
 	
+	public Member findByUseridAndPw(String userid, String pw);
+
+	public Member findByUserid(String username);
 }

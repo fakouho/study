@@ -7,11 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class searchCriteria {
-	// 검색 기준을 설정하는 객체
-	
+public class SearchCriteria {
 	private String type;
 	private String text;
-
+	
 }

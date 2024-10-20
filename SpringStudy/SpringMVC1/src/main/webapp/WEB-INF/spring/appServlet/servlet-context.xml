@@ -7,7 +7,9 @@
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- FrontController역할을 하는 DispatcherServlet을 초기화시키는 파일-->
+	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+
+	<!-- FronController 역할을 하는 DispatcherServlet을 초기화시키는 파일 -->
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
@@ -21,8 +23,8 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<!-- Controller가 존재하는 패키지를 스캔하는 코드 
-		>> 패키지명이 바뀌면 반드시 수정해야하는 공간
+	<!-- Controller가 존재하는 패키지를 스캔하는 코드
+		 >> 패키지명이 바뀌면 반드시 수정해야하는 공간!!!
 	-->
 	<context:component-scan base-package="com.smhrd.controller" />
 	

@@ -9,10 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class MemberDTO {
 	
-	// java안에서 사용할 데이터 교환요 ㅇ자료형
-	private Long id;
 	private String userid;
 	private String pw;
 	private String role;
-
 }

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
-<c:set var="cpath" value="${pageContext.request.contextPath}" />
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="cpath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,16 +9,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>과자</h1>
+	<h1>첫번째 Spring boot 웹페이지</h1>
 	<form action="${cpath}/login" method="post">
-		id : <input type="text" name ="id">
+		ID : <input type="text" name="id">
 		<br>
-		pw : <input type="text" name="pw">
+		PW : <input type="password" name="pw">
 		<br>
-		<input type="submit" value="로그인">
+		<input type="submit" value="Login">
 	</form>
 	<br>
-	<a href="${cpath}/join">회원가입 하러가기</a>
-
+	<a href="${cpath}/join">To join</a>
 </body>
 </html>
