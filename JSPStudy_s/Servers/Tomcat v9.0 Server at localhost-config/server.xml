@@ -162,7 +162,7 @@
              Note: The pattern used is equivalent to using fpattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="test1" path="/test1" reloadable="true" source="org.eclipse.jst.jee.server:test1"/><Context docBase="Practice_Chap01" path="/Practice_Chap01" reloadable="true" source="org.eclipse.jst.jee.server:Practice_Chap01"/><Context docBase="Practice_Chap02_Servlet-1" path="/Practice_Chap02_Servlet-1" reloadable="true" source="org.eclipse.jst.jee.server:Practice_Chap02_Servlet-1"/></Host>
+      <Context docBase="test1" path="/test1" reloadable="true" source="org.eclipse.jst.jee.server:test1"/><Context docBase="Practice_Chap01" path="/Practice_Chap01" reloadable="true" source="org.eclipse.jst.jee.server:Practice_Chap01"/><Context docBase="Practice_Chap02_Servlet-1" path="/Practice_Chap02_Servlet-1" reloadable="true" source="org.eclipse.jst.jee.server:Practice_Chap02_Servlet-1"/><Context docBase="Practice_Chap02_Servlet-2" path="/Practice_Chap02_Servlet-2" reloadable="true" source="org.eclipse.jst.jee.server:Practice_Chap02_Servlet-2"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+</head>
+<body>
+	<form action="join" method="post">
+		이름 : <input type="text" name="name">
+		<br>
+		아이디 : <input type="text" name="id">
+		<br>
+		비밀번호 : <input type="password" name="pw">
+		<br>
+		취미 : <input type="checkbox" name="hobby" value="read">독서
+			  <input type="checkbox" name="hobby" value="study">공부
+			  <input type="checkbox" name="hobby" value="cook">요리
+	
+		<br>
+		전공 : <input type="radio" name="major" value="kor" checked="checked">국어
+			  <input type="radio" name="major" value="en">영어
+			  <input type="radio" name="major" value="je">일어
+	   <br>
+	   
+	   <select name="protocol">
+	   	<option value="http">http</option>
+	   	<option value="ftp">ftp</option>
+	   	<option value="smtp">smtp</option>
+	   
+	   </select>
+	   <br>
+	   <input type="submit" value="전송">
+	   <input type="reset" value="초기화">
+	   
+		
+		
+	</form>
+</body>
+</html>
